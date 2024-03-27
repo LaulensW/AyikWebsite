@@ -3,9 +3,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 20px 0 20px;
+    padding: 10px 20px 0 20px;
     color: var(--second-color); /* Adjust the text color as needed */
     font-family: var(--nav-font);
+  }
+  
+  .info-bar {
+    background-color: var(--second-color);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
   }
   
   .navbar-left {
@@ -19,8 +27,9 @@
   }
   
   .logo {
-    width: 180px; /* Adjust the logo width as needed */
+    width: 160px; /* Adjust the logo width as needed */
     height: auto;
+    padding: 0px 100px;
   }
   
   .navbar-right {
@@ -41,10 +50,10 @@
   }
 
   .nav-button:hover{
-    color: #30c819;
+    color: var(--second-hover);
   }
   .nav-button.active{
-    color: #A0AD9E;
+    color: var(--second-hover);
   }
 
 /* Remove the focus border for both input and select */
@@ -54,7 +63,7 @@ select:focus {
 }
 
 ::placeholder{
-  color: #ADA39F;
+  color: var(--second-color);
 }
   
   
