@@ -1,0 +1,13 @@
+    .hero {
+        padding: 120px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+        color: var(--second-color);
+    }
+
+    .hero p {
+        font-size: 24px;
+        color: rgb(9, 8, 8);
+    }
