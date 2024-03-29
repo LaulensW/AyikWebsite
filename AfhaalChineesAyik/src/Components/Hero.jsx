@@ -7,7 +7,9 @@ const Hero = () => {
             <div className="hero-text">
                 <h1>Welkom bij Afhaalchinees Ayik</h1>
                 <p>De lekkerste gerechten van de beste kwaliteit</p>
+                <button>Menu</button>
             </div>
+            <img src="" alt="" />
         </div>
     );
 }
