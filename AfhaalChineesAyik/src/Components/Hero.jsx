@@ -9,6 +9,7 @@ const Hero = () => {
                 <p>De lekkerste gerechten van de beste kwaliteit</p>
                 <button>Menu</button>
             </div>
+            <img src="" alt="" />
         </div>
     );
 }
