@@ -5,7 +5,7 @@ import logo from '..//assets/Logo.png'; // Adjust the path as necessary
 
 const Navbar = () => {
     return (
-      <>
+      <div className='nav'>
         <div className="info-bar">
           <p>Tel: 0251 - 213413</p>
           <p>Plantage 146 - Open: Wo - Zo</p>
@@ -25,7 +25,7 @@ const Navbar = () => {
             </NavLink>
           </div>
         </nav>
-      </>
+      </div>
     );
   };
 export default Navbar;

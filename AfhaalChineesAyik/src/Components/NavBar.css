@@ -1,4 +1,20 @@
 /* components/Navbar.css */
+.nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Adjust the z-index as needed */
+  background-color: white; /* Adjust the background color as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+}
+
+/* Add padding to the body to prevent content from being hidden behind the fixed navbar */
+body {
+  padding-top: 300px; /* Adjust the padding-top based on the height of your navbar */
+}
+
+
 .navbar-container {
     display: flex;
     justify-content: space-between;
