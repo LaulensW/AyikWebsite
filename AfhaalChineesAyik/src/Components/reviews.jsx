@@ -17,7 +17,7 @@ const Reviews = () => {
                     <div key={index} className="review-card">
                         <div className="name">{review.name}</div>
                         <div className="content">{review.content}</div>
-                        <div className="rating">{review.rating} stars</div>
+                        <div className="rating">{review.rating} Sterren</div>
                     </div>
                 ))}
             </div>
