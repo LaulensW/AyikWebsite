@@ -1,11 +1,14 @@
 import React from "react";
 import Layout from "../Components/Layout";
+import MenuKaart from "../Components/menu";
 
-const Menu = () => {
+const menu = () => {
     return (
-        <Layout>
-        </Layout>
+        <div>
+            <Layout></Layout>
+            <MenuKaart/>
+        </div>
     );
 }
 
-export default Menu;
+export default menu;
