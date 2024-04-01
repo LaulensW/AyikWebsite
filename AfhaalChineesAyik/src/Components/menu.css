@@ -1,0 +1,74 @@
+#title_menu_page{
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+#main_div{
+    display: flex;
+    justify-content: space-around;
+}
+
+.className{
+    display: flex;
+    flex-direction: column;
+}
+
+#persoonsmenu{
+    width: 40vw;
+}
+
+#groepsmenu{
+    width: 40vw;
+}
+
+#nieuw{
+    text-align: center;
+}
+
+.text{
+    color: black;
+}
+
+.accordion {
+    background-color: #eee;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 40vw;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+
+#menus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  .panel {
+    width: 38vw;
+    text-align: left;
+    color: black;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+@media (max-width: 768px) {
+    #main_div{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    #persoonsmenu{
+        width: 80vw;
+    }
+    
+    #groepsmenu{
+        width: 80vw;
+    }
+}
