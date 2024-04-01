@@ -1,13 +1,14 @@
 import React from "react";
 import Layout from "../Components/Layout";
+import About from "../Components/AboutPage";
 
-const About = () => {
+const AboutPage = () => {
     return (
         <div>
-            <Layout>
-            </Layout>
+            <Layout></Layout>
+            <About />
         </div>
     );
 }
 
-export default About;
+export default AboutPage;
