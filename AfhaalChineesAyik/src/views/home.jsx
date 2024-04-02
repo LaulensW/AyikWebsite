@@ -4,6 +4,7 @@ import Hero from "../Components/Hero";
 import PopuItems from "../Components/Popu-items";
 import Reviews from "../Components/reviews";
 import Footer from "../Components/footer";
+import FAQ from "../Components/faq";
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
                 <Hero />
                 <PopuItems />
             </Layout>
+            <FAQ />
             <Reviews />
             <Footer/>
         </>
