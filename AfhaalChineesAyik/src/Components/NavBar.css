@@ -11,7 +11,7 @@
 
 /* Add padding to the body to prevent content from being hidden behind the fixed navbar */
 body {
-  padding-top: 300px; /* Adjust the padding-top based on the height of your navbar */
+  padding-top: 160px; /* Adjust the padding-top based on the height of your navbar */
 }
 
 
@@ -43,7 +43,7 @@ body {
   }
   
   .logo {
-    width: 160px; /* Adjust the logo width as needed */
+    width: 110px; /* Adjust the logo width as needed */
     height: auto;
     padding: 0px 100px;
   }
