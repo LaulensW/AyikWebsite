@@ -1,34 +1,43 @@
 import React from 'react';
 import './footer.css';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer__container">
-        <div className="footer__section">
-          <h4>Contact Us</h4>
-          <p>Plantage 146, Beverwijk, Nederland</p>
-          <p>Telefoonnummer: <a href="tel:+0251213413">0251 - 213413</a></p>
-          <p>Email: <a href="mailto:Ayik@outlook.nl">Ayik@outlook.nl</a></p>
+    <div className="footer-container">
+    <div className="footer">
+        <div className="footer-heading-1">
+            <h6 className="heading">ONZE WEBSITE</h6>
+            <Link to="/Menu" className="link">Menu</Link>
+            <Link to="/About" className="link">Over ons</Link>
         </div>
-        <div className="footer__section">
-          <h4>Delivery Areas</h4>
-          <ul>
-            <li>Beverwijk</li>
-            <li>Heemskerk</li>
-            <li>Velsen-Noord</li>
-          </ul>
+
+        <div className="footer-heading-2">
+            <h6 className="heading">OPENINGSTIJDEN</h6>
+            <p>Maandag: Gesloten</p>
+            <p>Dinsdag: Gesloten</p>
+            <p>Woensdag 16:00 - 21:00</p>
+            <p>Donderdag 16:00 - 21:00</p>
+            <p>Vrijdag 16:00 - 21:00</p>
+            <p>Zatrerdag 16:00 - 21:00</p>
+            <p>Zondag 16:00 - 21:00</p>
+            <p>Bezorgen vanaf 17:00 - 20:00</p>  
         </div>
-        <div className="footer__section">
-          <h4>Opening Hours</h4>
-          <p>Wednesday - Sunday: 16:00 - 21:00</p>
-          <p>Delivery from 17:00 - 20:00</p>
+
+        <div className="footer-heading-3">
+            <h6 className="heading">CONTACT</h6>
+            <a href="#" className="link">Plantage 146, Beverwijk</a>
+            <a href="#" className="link">Ayik@outlook.com</a>
+            <a href="#" className="link">0251 - 213413</a>
+            <br/>
         </div>
-      </div>
-      <div className="footer__copyright">
-        <p>&copy; {new Date().getFullYear()} AfhaalChinees Ayik. All Rights Reserved.</p>
-      </div>
-    </footer>
+    </div>
+
+    <div className="bottom-text">
+        <p className="bottom-text-indi">©2024 Afhaalchinees Ayik</p>
+        <a href="#" className="bottom-text-indi">Privacy</a>
+    </div>
+</div>
   );
 }
 
