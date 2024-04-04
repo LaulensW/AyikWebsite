@@ -13,7 +13,11 @@ const Home = () => {
                 <Hero />
                 <PopuItems />
             </Layout>
-            <FAQ />
+            <div className="splitser">
+                <FAQ />
+                <FAQ />
+            </div>
+            
             <Reviews />
             <Footer/>
         </>

@@ -1,0 +1,33 @@
+.popu-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  margin-top: 50px;
+  width: 89%;
+}
+
+.popu-items__image {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.popu-items__image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.popu-items__content {
+  flex: 1;
+}
+
+.popu-items__content h2 {
+  margin-bottom: 10px;
+  color: black;
+}
+
+.popu-items__content p {
+  margin-bottom: 20px;
+  color: #555;
+}

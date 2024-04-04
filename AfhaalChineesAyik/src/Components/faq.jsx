@@ -18,7 +18,7 @@ const FAQ = () => {
 
   return (
     <div className="faq-container">
-        <h1>Veelgestelde</h1>
+        <h1>Veelgestelde vragen</h1>
       {questions.map((item, index) => (
         <div key={index} className="faq-item">
           <h3 onClick={() => handleClick(index)} className="faq-question">{item.question}</h3>
