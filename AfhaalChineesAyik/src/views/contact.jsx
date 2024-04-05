@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../Components/Layout";
 import ContactPage from "../Components/ContactPage";
+import FAQ from "../Components/faq";
 import Footer from "../Components/footer";
 
 const Contact = () => {
@@ -9,6 +10,7 @@ const Contact = () => {
             <Layout> 
                 <ContactPage />
             </Layout>
+            <FAQ/>
             <Footer/>
         </div>
     );

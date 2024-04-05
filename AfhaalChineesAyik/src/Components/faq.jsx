@@ -5,7 +5,7 @@ const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const questions = [
-    { question: 'Question 1?', answer: 'Answer 1' },
+    { question: 'Betaling wijzen', answer: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
     { question: 'Question 2?', answer: 'Answer 2' },
     { question: 'Question 3?', answer: 'Answer 3' },
     { question: 'Question 4?', answer: 'Answer 4' },
