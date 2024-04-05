@@ -5,9 +5,9 @@ const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const questions = [
-    { question: 'Betaling wijzen', answer: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-    { question: 'Question 2?', answer: 'Answer 2' },
-    { question: 'Question 3?', answer: 'Answer 3' },
+    { question: 'Hoe kan ik betalen?', answer: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+    { question: 'Bezorgen jullie?', answer: 'Ja, We bezorgen in de regio: Beverwijk, Heemskerk, Velsen-Noord' },
+    { question: 'Waarom nemen jullie de telefoon niet op?', answer: '' },
     { question: 'Question 4?', answer: 'Answer 4' },
     { question: 'Question 5?', answer: 'Answer 5' },
   ];
