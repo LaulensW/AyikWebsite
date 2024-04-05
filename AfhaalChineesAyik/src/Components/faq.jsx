@@ -7,9 +7,8 @@ const FAQ = () => {
   const questions = [
     { question: 'Hoe kan ik betalen?', answer: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
     { question: 'Bezorgen jullie?', answer: 'Ja, We bezorgen in de regio: Beverwijk, Heemskerk, Velsen-Noord' },
-    { question: 'Waarom nemen jullie de telefoon niet op?', answer: '' },
-    { question: 'Question 4?', answer: 'Answer 4' },
-    { question: 'Question 5?', answer: 'Answer 5' },
+    { question: 'Waarom nemen jullie de telefoon niet op?', answer: 'Bekijk eerst of we open zijn zo ja, kan het op dat moment super druk zijn heb daar begrip bij want we staan soms maar met 2-3 man in de keuken' },
+    { question: 'Kan ik ook een dag van te voren bestellen', answer: 'Ja dat kan zeker. U kunt telefonisch of op locatie van te voren bestellen' },
   ];
 
   const handleClick = (index) => {
