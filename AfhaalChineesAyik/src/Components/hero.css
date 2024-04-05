@@ -1,20 +1,30 @@
-    .hero {
-        padding: 120px;
+    #landing{
+        display: flex;
+        flex-direction: row;
+        gap: 250px;
+        height: 700px;
+        background-image: url("../assets/pexels-cats-coming-1907228.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+   
+   .hero {
+        padding: 150px;
     }
 
     .hero h1 {
         font-size: 36px;
-        color: var(--second-color);
+        color: white;
     }
 
     .hero p {
         font-size: 24px;
-        color: rgb(9, 8, 8);
+        color: rgb(228, 228, 228);
     }
 
     button{
-        margin-top: 20px;
-        padding: 10px 20px;
+        margin-top: 30px;
+        padding: 12px 24px;
         font-size: 20px;
         background-color: var(--second-color);
         color: var(--main-color);
@@ -22,3 +32,21 @@
         border-radius: 12px;
         cursor: pointer;
     }
+
+    button:hover{
+        background-color: var(--second-hover);
+        transition: background-color 0.3s ease;
+        
+    }
+    
+
+    .card {
+        height: 500px;
+        width: 400px;
+        background-image: url(https://as2.ftcdn.net/v2/jpg/02/00/26/89/1000_F_200268903_WPZYJND6BvUUxMlUJvKgBS4oiiajadWw.jpg);
+        background-position: center;
+        border-radius: 8px;
+        box-shadow: 18px 18px 0 0 var(--second-color), 18px 18px 0 ;
+      }
+
+      

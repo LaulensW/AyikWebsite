@@ -1,16 +1,20 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "./hero.css";
 
 const Hero = () => {
     return (
+    <section id='landing'>
         <div className="hero">
             <div className="hero-text">
                 <h1>Welkom bij Afhaalchinees Ayik</h1>
                 <p>De lekkerste gerechten van de beste kwaliteit</p>
-                <button>Menu</button>
+                <Link to="/menu">
+                    <button>Menu</button>
+                </Link>
             </div>
-            <img src="" alt="" />
         </div>
+    </section>
     );
 }
 
