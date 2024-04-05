@@ -3,16 +3,17 @@ import Layout from '../Components/Layout';
 import Hero from "../Components/Hero";
 import PopuItems from "../Components/Popu-items";
 import Reviews from "../Components/reviews";
+import Footer from "../Components/footer";
 
 const Home = () => {
     return (
         <>
             <Layout>
-                {/* <h1>Home</h1> */}
+                <Hero />
+                <PopuItems />
             </Layout>
-            <Hero />
-            <PopuItems />
             <Reviews />
+            <Footer/>
         </>
     );
 };   

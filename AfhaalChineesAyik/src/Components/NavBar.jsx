@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className='nav'>
         <div className="info-bar">
           <p>Tel: 0251 - 213413</p>
-          <p>Plantage 146 - Open: Wo - Zo</p>
+          <p>Plantage 146, Beverwijk - Open: Wo - Zo</p>
         </div>
         <nav className="navbar-container">
           <div className="navbar-left">
