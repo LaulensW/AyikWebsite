@@ -49,14 +49,25 @@
 .rating {
     margin-bottom: 8px;
 }
+@media (max-width: 1280px) {
+    .group-reviews {
+        min-height: 550px; /* Adjust height for smaller screens */
+    }
+    
+}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+
+    .group-reviews {
+        min-height: 900px; /* Adjust height for smaller screens */
+    }
+
     .review-card {
-        width: 90%; /* Adjust width for smaller screens */
+        width: 80%; /* Adjust width for smaller screens */
     }
 
     .head-reviews {
-        font-size: 24px; /* Adjust heading font size for smaller screens */
+        font-size:  24px; /* Adjust heading font size for smaller screens */
     }
 }

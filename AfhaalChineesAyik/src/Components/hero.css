@@ -49,4 +49,16 @@
         box-shadow: 18px 18px 0 0 var(--second-color), 18px 18px 0 ;
       }
 
+      @media screen and (max-width: 768px){
+        .hero{
+            padding: 50px;
+            align-items: center;
+            text-align: center;
+            
+        }
+        .card{
+            width: 300px;
+        }
+        
+      }
       

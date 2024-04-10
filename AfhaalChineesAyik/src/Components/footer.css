@@ -53,6 +53,11 @@ label{
     padding: 30px 0px 24px 45px;
     margin-top: 110px;
 }
+
+.footer-container h6{
+    color: black;
+
+}
 .footer{
     color: var(--neutral-color);
     font-size: 14px;
@@ -82,35 +87,6 @@ label{
 }
 label{
     margin-bottom: 13px;
-}
-input[type=email]{
-    font-family: 'IBM Plex Mono', monospace;
-    color: var(--secondary-color);
-    padding: 14px;
-    font-size: 14px;
-    width: 78%;
-    border-radius: 100px;
-    border: none;
-    display: flex;
-}
-input[type=submit]{
-    font-family: 'IBM Plex Mono', monospace;
-    background-color: var(--Button-color);
-    color: var(--neutral-color);
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    border-radius: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 14px;
-    font-size: 14px;
-    width: 87%;
-    transition: background-color 0.3s ease-in-out;
-}
-input[type=submit]:hover{
-    background-color:#B07D78;
 }
 .bottom-text{
     display: flex;

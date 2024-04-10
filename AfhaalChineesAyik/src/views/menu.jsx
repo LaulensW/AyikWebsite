@@ -1,11 +1,17 @@
 import React from "react";
 import Layout from "../Components/Layout";
+import MenuKaart from "../Components/menu";
+import Footer from "../Components/footer";
 
-const Menu = () => {
+const menu = () => {
     return (
-        <Layout>
-        </Layout>
+        <div>
+            <Layout>
+                <MenuKaart/>
+            </Layout>
+            <Footer/>
+        </div>
     );
 }
 
-export default Menu;
+export default menu;

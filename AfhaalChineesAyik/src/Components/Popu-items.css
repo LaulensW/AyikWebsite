@@ -31,3 +31,15 @@
   margin-bottom: 20px;
   color: #555;
 }
+
+@media screen and (max-width: 768px) {
+  .popu-items {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .popu-items__image {
+    display: none;
+  }
+  
+}
