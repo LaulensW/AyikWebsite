@@ -35,12 +35,11 @@
 @media screen and (max-width: 768px) {
   .popu-items {
     flex-direction: column;
-    padding: 0;
+    padding: 20px;
   }
 
   .popu-items__image {
-    margin-right: 0;
-    margin-bottom: 20px;
+    display: none;
   }
   
 }
