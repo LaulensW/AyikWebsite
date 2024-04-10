@@ -3,6 +3,10 @@
     margin-bottom: 10vh;
 }
 
+.Menu-container{
+    padding-top: 30px;
+}
+
 #main_div{
     display: flex;
     justify-content: space-around;

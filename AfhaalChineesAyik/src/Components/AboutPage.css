@@ -4,6 +4,7 @@
     align-items: center;
     flex-direction: column;
     width: 100vw;
+    padding-top: 30px;
 }
 .about_us_container{
     width: 100%;    
