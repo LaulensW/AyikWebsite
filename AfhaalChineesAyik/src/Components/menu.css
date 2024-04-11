@@ -75,4 +75,11 @@
     #groepsmenu{
         width: 80vw;
     }
+
+    .panel{
+        width: 78vw;
+    }
+    .accordion{
+        width: 78vw;
+    }
 }
