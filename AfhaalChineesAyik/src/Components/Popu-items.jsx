@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 const PopuItems = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Duration of the animation
+      duration: 700, // Duration of the animation
       offset: 200, // Offset (in pixels) from the bottom of the screen
       easing: 'ease-in-out', // Easing type
       delay: 200, // Delay (in milliseconds) before the animation starts
