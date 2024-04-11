@@ -11,7 +11,7 @@
 
 /* Add padding to the body to prevent content from being hidden behind the fixed navbar */
 body {
-  padding-top: 139px; /* Adjust the padding-top based on the height of your navbar */
+  padding-top: 160px; /* Adjust the padding-top based on the height of your navbar */
 }
 
 
@@ -85,6 +85,7 @@ select:focus {
 @media (max-width: 1280px){
   .nav-button{
     font-size: 20px;
+
   }
 }
   
@@ -92,6 +93,10 @@ select:focus {
 @media (max-width: 768px) {
   .navbar-right {
     display: none;
+  }
+
+  body {
+    padding-top: 130px; /* Adjust the padding-top based on the height of your navbar */
   }
 
   .navbar-right-mobile {

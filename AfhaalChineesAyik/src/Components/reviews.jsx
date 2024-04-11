@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./reviews.css";
 import starImage from "../assets/star.svg"; // Import your star image here
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Reviews = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 700, // Duration of the animation
+            offset: 200, // Offset (in pixels) from the bottom of the screen
+            easing: 'ease-in-out', // Easing type
+            delay: 200, // Delay (in milliseconds) before the animation starts
+            once: true // Only animate once
+        });
+    }, []);
+
     const reviewsData = [
         { name: "Aad Sanders", content: "Heerlijk gegeten grote bakken, alles goed heet .niets te klagen alleen wat aan de prijs", rating: 5 },
         { name: "Ruud Doets", content: "De loempia yik (speciaal) is mega groot en mega goed de rest van het eten is middelmatig tot een gore droge hap.", rating: 3 },
@@ -21,7 +33,7 @@ const Reviews = () => {
     return (
         <div className="group-reviews">
             <h1 className="head-reviews">Reviews</h1>
-            <div className="reviews-container">
+            <div className="reviews-container" data-aos="fade-up">
                 {reviewsData.map((review, index) => (
                     <div key={index} className="review-card">
                         <div className="name">{review.name}</div>

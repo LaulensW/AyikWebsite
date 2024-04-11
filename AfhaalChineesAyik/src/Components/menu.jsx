@@ -27,7 +27,7 @@ const MenuKaart = () => {
     }, [activeAccordion]);
 
     return (
-        <>
+        <div className="Menu-container">
             <h1 id="title_menu_page">Bestel lijst</h1>
             <div id="main_div">
                 <div id="persoonsmenu">
@@ -544,7 +544,7 @@ const MenuKaart = () => {
                     </p>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 
