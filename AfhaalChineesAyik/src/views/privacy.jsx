@@ -1,17 +1,17 @@
 import React from "react";
 import Layout from "../Components/Layout";
-import Privacy from "../Components/PrivacyPage";
+import PrivacyPage from "../Components/PrivacyPage";
 import Footer from "../Components/footer";
 
-const PrivacyPage = () => {
+const Privacy = () => {
     return (
         <div>
             <Layout>
-                <Privacy />
+                <PrivacyPage />
             </Layout>
             <Footer/>
         </div>
     );
 }
 
-export default PrivacyPage;
+export default Privacy;
