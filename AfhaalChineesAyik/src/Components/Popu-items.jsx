@@ -18,7 +18,7 @@ const PopuItems = () => {
     <>
       <section className="popu-items" data-aos="fade-up">
         <div className="popu-items__image">
-          <img src="image-url" alt="Food Image" />
+          <img src="./assets/Voorkant.jpg" alt="Food Image" />
         </div>
         <div className="popu-items__content">
           <h2>Welkom bij Afhaalchinees Ayik!</h2>
