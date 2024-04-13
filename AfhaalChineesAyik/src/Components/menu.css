@@ -1,4 +1,7 @@
 /* Default styles */
+li{
+    list-style: none;
+}
 .menu-container {
     width: 80%;
     margin: auto;
@@ -52,7 +55,7 @@
   }
   
   .menu-answer.open {
-    max-height: 100px; /* Adjust this value based on your content */
+    max-height: 1000px; /* Adjust this value based on your content */
   }
   
   /* Media queries for responsiveness */
