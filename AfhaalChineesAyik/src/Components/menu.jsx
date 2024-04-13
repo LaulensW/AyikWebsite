@@ -258,15 +258,12 @@ const MenuKaart = () => {
                 </ul>
             </div>
             ))}
+            <a href=".pdf" className="pdf_link" name="Menukaart pdf" target="_blank">Menukaart pdf</a>
         </div>
     );
   };
   
   export default MenuKaart;
-
-
-
-
 
 
 

@@ -7,6 +7,16 @@
     padding: 50px;
     margin: 50px auto;
   }
+
+#menus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.panel {
+    width: 38vw;
+    text-align: left;
+}
   
   .menu-container h1 {
     text-align: center;
@@ -48,6 +58,23 @@
   .menu-answer {
     max-height: 0;
     overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.pdf_link{
+    padding-top: 5vh;
+    font-size: 1.3em;
+}
+
+@media (max-width: 768px) {
+    #main_div{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    #persoonsmenu{
+        width: 80vw;
     transition: max-height 0.5s ease-out;
   }
   
