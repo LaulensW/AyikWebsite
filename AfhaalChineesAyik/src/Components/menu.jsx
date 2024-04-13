@@ -7,26 +7,63 @@ const MenuKaart = () => {
     const [activeIndex, setActiveIndex] = useState(null);
   
     const menuInfo = [
-      { category: 'Cantonese Specialiteiten van onze chefs', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Sechuan Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Soepen', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Voorgerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Nasi Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Nasi compleet Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Bami Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Bami compleet Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Mihoen Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Chinese Bami Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Vegetarische Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Eier Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Groenten Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Vlees Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Kip Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Garnalen Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Rundvlees Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Hollandse Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Rijsttafels', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Voordeel Menu', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+        { category: 'Cantonese Specialiteiten van onze chefs', gerecht: [   
+            'C3.TAU SIE KAI --- € 15,50',
+            'C4.NG HEUNG CHAP KAM LAP --- € 15,50',
+            'C5.TAU SIE YUK --- € 15,50',
+            'C6.KING DO YUK --- € 16,00',
+            'C6a.KING DO KAI --- € 16,00',
+            'C7.CHA SIU --- € 17,00',
+            'C8.NG HEUNG NGO YUK LAP --- € 17,00',
+            'C9.TAU SIE NGO YUK --- € 17,00',
+            'C10.TJI LO CHAU NGO YUK --- € 17,00',
+            'C11.PAT CHUN TAU FOE PO --- € 17,00',
+            'C16.NG HEUNG CHAP KAM HA --- € 21,00',
+            'C17.PEKING EEND --- € 17,50',
+            'C18.TONG KOE AP --- € 18,50']},
+        { category: 'Sechuan Gerechten', gerecht: [
+            'S1.KUNG PO HA --- € 21,00 (Chinese garnalen in kung po saus)',
+            'S2.KUNG PO KAI --- € 16,00 (Gesneden kip in kung po saus)',
+            'S3.KUNG PO YUK --- € 16,00 (Gesneden varkensvlees in kung po saus)',
+            'S4.KUNG PO NGO YUK --- € 18,00 (Gesneden rundvlees in kung po saus)',
+            'S5.SECHUAN HA --- € 21,00 (Chinese garnalen in sechuan saus)',
+            'S6.SECHUAN KAI --- € 16,00 (Gesneden kip in sechuan saus)',
+            'S7.SECHUAN YUK --- € 16,00 (Gesneden varkensvlees in sechuan saus)',
+            'S8.SECHUAN NGO YUK --- € 18,00 (Gesneden rundvlees in sechuan saus)',
+            'S9.CHEUNG PAW HA --- € 21,00 (Chinese garnalen in cheung paw saus)',
+            'S10.CHEUNG PAW KAI --- € 16,00 (Gesneden kip in cheung paw saus)',
+            'S11.CHEUNG PAW YUK --- € 16,00 (Gesneden varkensvlees in cheung paw saus)',
+            'S12.CHEUNG PAW NGO YUK --- € 18,00 (Gesneden rundvlees in cheung paw saus)',
+            'S13.MA PA TAU FOE --- € 16,00 (Taufoe met fijn gesneden rundvlees, groente en jonge mais in chilibonensaus)']},
+        { category: 'Soepen', gerecht: [
+            '1.Kippensoep --- € 3,50',
+            '2.Tomatensoep --- € 3,50',
+            '3.Haaienvinnensoep --- € 3,50',
+            '4.Champignonsoep --- € 3,50',
+            '5.Kerriesoep --- € 3,50',
+            '6.Aspergesoep --- € 3,50',
+            '7.Bamboesoep --- € 3,50',
+            '8.Chinese groentesoep --- € 3,50',
+            '9.Hete Pekingsoep --- € 6,50',
+            '10.Wan Tan soep --- € 6,50'
+          ]},
+        { category: 'Voorgerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+    //   { category: 'Nasi Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+    //   { category: 'Nasi compleet Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+    //   { category: 'Bami Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+    //   { category: 'Bami compleet Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+    //   { category: 'Mihoen Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+    //   { category: 'Chinese Bami Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+    //   { category: 'Vegetarische Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+    //   { category: 'Eier Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+    //   { category: 'Groenten Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+    //   { category: 'Vlees Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+    //   { category: 'Kip Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+    //   { category: 'Garnalen Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+    //   { category: 'Rundvlees Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+    //   { category: 'Hollandse Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+    //   { category: 'Rijsttafels', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+    //   { category: 'Voordeel Menu', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
     ];
   
     const handleClick = (index) => {
@@ -34,16 +71,20 @@ const MenuKaart = () => {
     };
   
     return (
-      <div className="faq-container">
-          <h1>Bestel lijst</h1>
-        {menuInfo.map((item, index) => (
-          <div key={index} className="faq-item">
-            <h3 onClick={() => handleClick(index)} className="faq-question">{item.category}</h3>
-            <p className={`faq-answer ${activeIndex === index ? 'open' : ''}`}>{item.gerecht}</p>
-          </div>
-        ))}
+        <div className="menu-container">
+            <h1>Bestel lijst</h1>
+            {menuInfo.map((item, index) => (
+            <div key={index} className="menu-item">
+                <h3 onClick={() => handleClick(index)} className="nenu-question">{item.category}</h3>
+                <ul className={`menu-answer ${activeIndex === index ? 'open' : ''}`}>
+                {item.gerecht.map((gerecht, gerechtIndex) => (
+                    <li key={gerechtIndex}>{gerecht}</li>
+                ))}
+                </ul>
+            </div>
+            ))}
             <a href=".pdf" className="pdf_link" name="Menukaart pdf" target="_blank">Menukaart pdf</a>
-      </div>
+        </div>
     );
   };
   

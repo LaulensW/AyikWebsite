@@ -1,49 +1,11 @@
-#title_menu_page{
-    text-align: center;
-    margin-bottom: 10vh;
-}
-
-.Menu-container{
-    padding-top: 30px;
-}
-
-#main_div{
-    display: flex;
-    justify-content: space-around;
-}
-
-.className{
-    display: flex;
-    flex-direction: column;
-}
-
-#persoonsmenu{
-    width: 40vw;
-}
-
-#groepsmenu{
-    width: 40vw;
-}
-
-#nieuw{
-    text-align: center;
-}
-
-.text{
-    color: black;
-}
-
-.accordion {
-    background-color: #eee;
-    color: black;
-    cursor: pointer;
-    padding: 18px;
-    width: 40vw;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
+/* Default styles */
+.menu-container {
+    width: 80%;
+    margin: auto;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    padding: 50px;
+    margin: 50px auto;
   }
 
 #menus{
@@ -54,8 +16,46 @@
 .panel {
     width: 38vw;
     text-align: left;
+}
+  
+  .menu-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
     color: black;
-    padding: 0 18px;
+  }
+  
+  .menu-item {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .menu-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  }
+  
+  .menu-question {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: var(--second-color);
+  }
+  
+  .menu-answer {
+    padding-left: 10px;
+    line-height: 1.6;
+    color: #666;
+    margin-top: 10px;
+    border-left: 3px solid var(--second-color);
+    padding-left: 15px;
+  }
+  
+  .menu-answer {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
@@ -75,16 +75,41 @@
     }
     #persoonsmenu{
         width: 80vw;
+    transition: max-height 0.5s ease-out;
+  }
+  
+  .menu-answer.open {
+    max-height: 1000px; /* Adjust this value based on your content */
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .menu-container {
+      width: 90%;
+      padding: 30px;
     }
     
-    #groepsmenu{
-        width: 80vw;
+    .menu-item {
+      padding: 15px;
     }
-
-    .panel{
-        width: 78vw;
+    
+    .menu-container h1 {
+      font-size: 1.8em;
     }
-    .accordion{
-        width: 78vw;
+  }
+  
+  @media (max-width: 576px) {
+    .menu-container {
+      width: 95%;
+      padding: 10px;
     }
-}
+    
+    .menu-item {
+      padding: 10px;
+    }
+    
+    .menu-container h1 {
+      font-size: 1.6em;
+    }
+  }
+  
