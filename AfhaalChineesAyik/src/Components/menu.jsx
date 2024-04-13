@@ -42,15 +42,12 @@ const MenuKaart = () => {
             <p className={`faq-answer ${activeIndex === index ? 'open' : ''}`}>{item.gerecht}</p>
           </div>
         ))}
+            <a href=".pdf" className="pdf_link" name="Menukaart pdf" target="_blank">Menukaart pdf</a>
       </div>
     );
   };
   
   export default MenuKaart;
-
-
-
-
 
 
 
