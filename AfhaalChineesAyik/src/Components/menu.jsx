@@ -7,26 +7,38 @@ const MenuKaart = () => {
     const [activeIndex, setActiveIndex] = useState(null);
   
     const menuInfo = [
-      { category: 'Cantonese Specialiteiten van onze chefs', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Sechuan Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Soepen', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Voorgerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Nasi Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Nasi compleet Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Bami Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Bami compleet Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Mihoen Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Chinese Bami Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Vegetarische Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Eier Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Groenten Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Vlees Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Kip Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Garnalen Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Rundvlees Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Hollandse Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Rijsttafels', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
-      { category: 'Voordeel Menu', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+      { category: 'Cantonese Specialiteiten van onze chefs', gerecht: [     'C3.TAU SIE KAI --- € 15,50',
+                                                                            'C4.NG HEUNG CHAP KAM LAP --- € 15,50',
+                                                                            'C5.TAU SIE YUK --- € 15,50',
+                                                                            'C6.KING DO YUK --- € 16,00',
+                                                                            'C6a.KING DO KAI --- € 16,00',
+                                                                            'C7.CHA SIU --- € 17,00',
+                                                                            'C8.NG HEUNG NGO YUK LAP --- € 17,00',
+                                                                            'C9.TAU SIE NGO YUK --- € 17,00',
+                                                                            'C10.TJI LO CHAU NGO YUK --- € 17,00',
+                                                                            'C11.PAT CHUN TAU FOE PO --- € 17,00',
+                                                                            'C16.NG HEUNG CHAP KAM HA --- € 21,00',
+                                                                            'C17.PEKING EEND --- € 17,50',
+                                                                            'C18.TONG KOE AP --- € 18,50'] },
+    //   { category: 'Sechuan Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+    //   { category: 'Soepen', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+    //   { category: 'Voorgerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+    //   { category: 'Nasi Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+    //   { category: 'Nasi compleet Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+    //   { category: 'Bami Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+    //   { category: 'Bami compleet Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+    //   { category: 'Mihoen Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+    //   { category: 'Chinese Bami Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+    //   { category: 'Vegetarische Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+    //   { category: 'Eier Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+    //   { category: 'Groenten Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+    //   { category: 'Vlees Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+    //   { category: 'Kip Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+    //   { category: 'Garnalen Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+    //   { category: 'Rundvlees Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+    //   { category: 'Hollandse Gerechten', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+    //   { category: 'Rijsttafels', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
+    //   { category: 'Voordeel Menu', gerecht: 'Bij het bezorgen/afhalen kunt u pinnen en ook contant betalen' },
     ];
   
     const handleClick = (index) => {
@@ -34,15 +46,19 @@ const MenuKaart = () => {
     };
   
     return (
-      <div className="faq-container">
-          <h1>Bestel lijst</h1>
-        {menuInfo.map((item, index) => (
-          <div key={index} className="faq-item">
-            <h3 onClick={() => handleClick(index)} className="faq-question">{item.category}</h3>
-            <p className={`faq-answer ${activeIndex === index ? 'open' : ''}`}>{item.gerecht}</p>
-          </div>
-        ))}
-      </div>
+        <div className="menu-container">
+            <h1>Bestel lijst</h1>
+            {menuInfo.map((item, index) => (
+            <div key={index} className="menu-item">
+                <h3 onClick={() => handleClick(index)} className="nenu-question">{item.category}</h3>
+                <ul className={`menu-answer ${activeIndex === index ? 'open' : ''}`}>
+                {item.gerecht.map((gerecht, gerechtIndex) => (
+                    <li key={gerechtIndex}>{gerecht}</li>
+                ))}
+                </ul>
+            </div>
+            ))}
+        </div>
     );
   };
   
