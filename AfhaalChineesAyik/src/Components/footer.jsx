@@ -35,7 +35,7 @@ const Footer = () => {
 
     <div className="bottom-text">
         <p className="bottom-text-indi">©2024 Afhaalchinees Ayik</p>
-        <a href="#" className="bottom-text-indi">Privacy</a>
+        <Link to="/Privacy" className="bottom-text-indi">Privacy</Link>
     </div>
 </div>
   );

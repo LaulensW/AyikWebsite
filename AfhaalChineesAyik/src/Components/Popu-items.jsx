@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./Popu-items.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Voorkant from "../assets/Voorkant.jpg";
 
 const PopuItems = () => {
   useEffect(() => {
@@ -18,13 +19,13 @@ const PopuItems = () => {
     <>
       <section className="popu-items" data-aos="fade-up">
         <div className="popu-items__image">
-          <img src="./assets/Voorkant.jpg" alt="Food Image" />
+          <img src={Voorkant} alt="Food Image" />
         </div>
         <div className="popu-items__content">
           <h2>Welkom bij Afhaalchinees Ayik!</h2>
           <p>Bij Afhaalchinees Ayik bieden we heerlijke gerechten uit de authentieke Chinese keuken die zowel bezorgd kunnen worden als afgehaald. Ontdek een wereld van smaken en geniet van onze verse en smaakvolle maaltijden, rechtstreeks bij jou thuis bezorgd of klaar om op te halen.</p>
           <p>Wacht niet langer en plaats nu je bestelling voor een culinaire reis door China! Of kom gezellig langs en haal je favoriete gerechten op om thuis van te genieten.</p>
-          <button>Bestel Nu!</button>
+          <a href="tel:0251 213413"><button>Bestel Nu!</button></a>
         </div>
       </section>
     </>

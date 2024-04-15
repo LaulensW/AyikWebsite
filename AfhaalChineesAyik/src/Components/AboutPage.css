@@ -3,9 +3,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100vw;
-    padding-top: 30px;
+    width: 100%;
+    margin-top: 50px;
 }
+
 .about_us_container{
     width: 100%;    
     display: flex;
@@ -15,6 +16,7 @@
 }
 
 .title_about_us{
+    color: #000;
     font-size: 1.8rem;
 }
 .text_about_us{
@@ -25,9 +27,9 @@
 
 
 .kok{  
-    border-radius: 10px;
-    border: 2px solid #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    max-height: 30rem;
+    border-radius: 8px;
+    box-shadow: 18px 18px 0 0 var(--second-color), 18px 18px 0 ;
 }
 
 

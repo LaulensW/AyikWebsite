@@ -31,6 +31,11 @@ body {
     justify-content: space-between;
     color: white;
   }
+
+  .info-bar a {
+    color: white;
+    text-underline-offset: 2px;
+  }
   
   .navbar-left {
     display: flex;
@@ -105,7 +110,7 @@ select:focus {
   }
 
   .info-bar {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .mobile-menu {

@@ -15,8 +15,8 @@ const Navbar = () => {
     return (
       <div className='nav'>
         <div className="info-bar">
-          <p>Tel: 0251 - 213413</p>
-          <p>Plantage 146, Beverwijk - Open: Wo - Zo</p>
+          <a href="tel:0251 213413"><p>Tel: 0251 - 213413</p></a>
+          <a href="https://maps.app.goo.gl/jHbwBG5DhFi86xmGA"><p>Plantage 146, Beverwijk - Open: Wo - Zo</p></a>
         </div>
         <nav className="navbar-container">
           <div className="navbar-left">
