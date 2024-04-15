@@ -248,6 +248,40 @@ const MenuKaart = () => {
     return (
         <div className="menu-container">
             <h1>Bestel lijst</h1>
+            <div className="menu-colum">
+            <div id="persoonsmenu">
+                    <h3 id="nieuw"> Eén persoonsmenu</h3>
+                    <p className="text">
+                        Alleen eten hoeft niet saai te zijn!
+                        Geniet nu van heerlijke éénpersoonsmenu's van À Yik.
+                        Uw menu bestaat uit witte rijst, nasi of bami, een saté en de keuze uit één van onderstaande gerechten:
+                    </p>
+                    <div className="eennpersoonsmenu">
+                            <p className="text">1: Babi Pangang</p>
+                           <p className="text">2: Foe Yong Hai</p> 
+                           <p className="text"> 3: Koe Lo Kai</p>
+                           <p className="text"> 4: Kip Kerrie</p>
+                           <p className="text">5: Tjap Tjoy</p>
+                           <p className="text">Voor maar € 7,50</p>
+                           <p className="text">Waar wacht u nog op, bestel snel!</p>
+                    </div>
+                </div>
+                <div id="groepsmenu">
+                    <h3 id="nieuw">NIEUW !</h3>
+                    <p className="text">
+                        U kunt ook bij ons chaffing dishes lenen, als u boven de 15 personen bestelt. 
+                        Het is namelijk veel handiger dan plastic bakken en het staat veel mooier, wanneer u bv.
+                        Een feest geeft. Als u bestelt, willen we het voortijdig weten, zodat wij ons erop kunnen voorbereiden.
+                    </p>
+                    <br />
+                    <h4 className="text">Beverwijk - Heemskerk - Velsen Noord
+                            (bezorgdienst van 17.00 - 20.00 uur) Maandag en Dinsdag zijn wij gesloten!
+                    </h4>
+                      <a href="/path/to/menu.pdf" target="_blank" rel="noopener noreferrer">
+                        <button type="button">Menu PDF</button>
+                      </a>
+                  </div>
+                </div>
             {menuInfo.map((item, index) => (
             <div key={index} className="menu-item">
                 <h3 onClick={() => handleClick(index)} className="menu-question">{item.category}</h3>
@@ -258,7 +292,6 @@ const MenuKaart = () => {
                 </ul>
             </div>
             ))}
-            <a href=".pdf" className="pdf_link" name="Menukaart pdf" target="_blank">Menukaart pdf</a>
         </div>
     );
   };

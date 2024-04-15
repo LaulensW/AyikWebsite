@@ -10,6 +10,24 @@ li{
     padding: 50px;
     margin: 50px auto;
   }
+
+.menu-colum{
+    display: flex;
+    flex-direction: row;
+}
+
+  #persoonsmenu, #groepsmenu {
+    padding: 20px;
+}
+
+.text {
+    font-size: 16px;
+    color: #333;
+}
+
+.eennpersoonsmenu {
+    margin-top: 20px;
+}
   
   .menu-container h1 {
     text-align: center;
@@ -72,6 +90,14 @@ li{
     .menu-container h1 {
       font-size: 1.8em;
     }
+    
+    .menu-colum {
+      flex-direction: column;
+    }
+
+    .menu-container button{
+        justify-content: center;
+    }
   }
   
   @media (max-width: 576px) {
@@ -87,5 +113,8 @@ li{
     .menu-container h1 {
       font-size: 1.6em;
     }
+    .menu-colum {
+        flex-direction: column;
+      }
   }
   
