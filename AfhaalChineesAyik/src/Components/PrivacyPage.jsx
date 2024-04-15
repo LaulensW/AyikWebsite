@@ -4,7 +4,6 @@ import "./PrivacyPage.css";
 const PrivacyPage = () => {
     return (
 
-          <li>Naam</li>
       <main className="privacy-div">
       <h1>Privacybeleid van Afhaalchinees Ayik</h1>
       <p><strong>Laatst bijgewerkt op 11/4/2024</strong></p>
