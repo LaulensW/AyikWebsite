@@ -1,48 +1,36 @@
 .privacy-div {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  
-  .privacy-div h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .privacy-div h2 {
-    font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .privacy-div p {
-    margin-bottom: 20px;
-  }
-  
-  .privacy-div ul {
-    padding-left: 0;
-  }
-  
-  .privacy-div li {
-    margin-bottom: 10px;
-  }
-  
-  .privacy-div a {
-    color: #007bff;
-    text-decoration: none;
-  }
-  
-  .privacy-div a:hover {
-    text-decoration: underline;
-  }
-  
-  @media only screen and (max-width: 800px) {
-    .privacy-div {
-      padding: 10px;
-      max-width: calc(100% - 40px);
-    }
-  }
-  
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.privacy-div h1 {
+  color: #333;
+  font-size: 2em;
+}
+
+.privacy-div h2 {
+  color: #666;
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+.privacy-div p, .privacy-div ul {
+  color: #666;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.privacy-div ul {
+  padding-left: 20px;
+}
+
+.privacy-div a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.privacy-div a:hover {
+  text-decoration: underline;
+}

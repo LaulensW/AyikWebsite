@@ -1,23 +1,22 @@
-import React from 'react';
+import React from "react";
+import "./PrivacyPage.css";
 
 const PrivacyPage = () => {
     return (
 
-        <div class="privay-div">
-        <h1>Privacybeleid van Afhaalchinees Ayik</h1>
-        
-        <p><strong>Laatst bijgewerkt op 11/4/2024</strong></p>
-        
-        <p>Dit privacybeleid beschrijft hoe Afhaalchinees Ayik onze persoonlijke gegevens verzamelt, gebruikt en beschermt die u aan ons verstrekt wanneer u onze diensten gebruikt.</p>
-        
-        <h2>1. Welke informatie verzamelen we?</h2>
-        
-        <ul>
           <li>Naam</li>
-          <li>Contactgegevens zoals e-mailadres, telefoonnummer</li>
-          <li>Demografische informatie zoals postcode, voorkeuren en interesses</li>
-          <li>Andere informatie relevant voor klantonderzoeken en/of aanbiedingen</li>
-        </ul>
+      <main className="privacy-div">
+      <h1>Privacybeleid van Afhaalchinees Ayik</h1>
+      <p><strong>Laatst bijgewerkt op 11/4/2024</strong></p>
+      <section>
+          <h2>1. Welke informatie verzamelen we?</h2>
+          <ul>
+              <li>Naam</li>
+              <li>Contactgegevens zoals e-mailadres, telefoonnummer</li>
+              <li>Demografische informatie zoals postcode, voorkeuren en interesses</li>
+              <li>Andere informatie relevant voor klantonderzoeken en/of aanbiedingen</li>
+          </ul>
+      </section>
         
         <h2>2. Hoe gebruiken we deze informatie?</h2>
         
@@ -38,7 +37,7 @@ const PrivacyPage = () => {
         <h2>6. Contact opnemen met ons</h2>
         
         <p>Als u vragen heeft over ons privacybeleid, neem dan contact met ons op via het telefoonnummer <a href="tel:0251213413">0251 - 213413</a> of <a href="mailto:Ayik@outlook.nl">mail ons</a>.</p>
-        </div>
+        </main>
         
     );
 }
