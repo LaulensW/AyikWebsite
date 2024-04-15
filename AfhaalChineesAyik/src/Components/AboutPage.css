@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     padding-top: 30px;
 }
 .about_us_container{
@@ -25,9 +25,8 @@
 
 
 .kok{  
-    border-radius: 10px;
-    border: 2px solid #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    box-shadow: 18px 18px 0 0 var(--second-color), 18px 18px 0 ;
 }
 
 
