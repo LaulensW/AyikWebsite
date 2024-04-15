@@ -3,7 +3,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 50px;
-  margin-top: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   width: 89%;
 }
 
@@ -13,9 +14,11 @@
 }
 
 .popu-items__image img {
-  width: 100%;
+  margin-left: 80px;
+  width: 80%;
   height: auto;
   border-radius: 10px;
+  box-shadow: 18px 18px 0 0 var(--second-color), 18px 18px 0 ;
 }
 
 .popu-items__content {
@@ -34,12 +37,13 @@
 
 @media screen and (max-width: 768px) {
   .popu-items {
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding: 20px;
   }
 
   .popu-items__image {
-    display: none;
+    margin: 20px;
+    margin-right: 20px;
   }
   
 }

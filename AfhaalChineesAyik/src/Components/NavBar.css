@@ -34,6 +34,7 @@ body {
 
   .info-bar a {
     color: white;
+    text-underline-offset: 2px;
   }
   
   .navbar-left {
