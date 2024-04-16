@@ -1,7 +1,26 @@
-import react from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import "./ContactPage.css";
 
 const ContactPage = () => {
+    const form = useRef();
+
+    // Functie om e-mails te verzenden
+  const sendEmail = (e) => {
+    e.preventDefault();
+  
+      // Gebruikt de emailjs Lib om de formuliergegevens te verzenden
+    emailjs.sendForm('service_pk6i4vb', 'template_zsb07pr', form.current, 'dToLWCvJTiCrpOg00')
+    .then((result) => {
+      console.log(result.text);
+      form.current.reset();
+      alert('Message sent successfully!');
+    })
+    .catch((error) => {
+      console.log(error.text);
+      alert('Message failed to send. Please try again.');
+    });
+  };
     return (
     <>
 <div class="contact-container">
@@ -15,17 +34,17 @@ const ContactPage = () => {
     </div>
     <div class="contact-form">
         <h2>Contact Us</h2>
-        <form>
+        <form ref={form} onSubmit={sendEmail}>
             <div class="form-group">
-                <input type="text" id="name" name="name" required />
+                <input type="text" id="name" name="name" required style={{fontSize: '16px'}}/>
                 <label for="name">Naam</label>
             </div>
             <div class="form-group">
-                <input type="email" id="email" name="email" required />
+                <input type="email" id="email" name="email" required style={{fontSize: '16px'}}/>
                 <label for="email">Email</label>
             </div>
             <div class="form-group">
-                <textarea id="description" name="description" rows="5" required></textarea>
+                <textarea id="description" name="description" rows="5" required style={{fontSize: '16px'}}></textarea>
                 <label for="description">Bericht</label>
             </div>
             <button type="submit">Verstuur bericht</button>
