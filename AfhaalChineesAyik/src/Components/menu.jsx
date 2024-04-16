@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import menu from "../assets/MENU.pdf";
 import "./menu.css";
 
 
@@ -275,9 +276,10 @@ const MenuKaart = () => {
                     </p>
                     <br />
                     <h4 className="text">Beverwijk - Heemskerk - Velsen Noord
-                            (bezorgdienst van 17.00 - 20.00 uur) Maandag en Dinsdag zijn wij gesloten!
+                            (bezorgdienst van 17.00 - 20.00 uur) Maandag en Dinsdag zijn wij gesloten! <br />
+                            Wij bezorgen vanaf € 15,00
                     </h4>
-                      <a href="/path/to/menu.pdf" target="_blank" rel="noopener noreferrer">
+                      <a href={menu} target="_blank" rel="noopener noreferrer">
                         <button type="button">Menu PDF</button>
                       </a>
                   </div>
