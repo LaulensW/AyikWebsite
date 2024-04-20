@@ -17,7 +17,7 @@ const Reviews = () => {
 
     const reviewsData = [
         { name: "Aad Sanders", content: "Heerlijk gegeten grote bakken, alles goed heet .niets te klagen alleen wat aan de prijs", rating: 5 },
-        { name: "Ruud Doets", content: "De loempia yik (speciaal) is mega groot en mega goed de rest van het eten is middelmatig tot een gore droge hap.", rating: 3 },
+        { name: "George", content: "Ik kreeg de plaats aanbevolen door een vriend en werd niet teleurgesteld. De verhouding prijs, kwantiteit en kwaliteit is voor mij het beste", rating: 5 },
         { name: "Martijn vanderLans", content: "Eerste keer besteld; vriendelijk aan de telefoon, zeer snel bezorgd. Eten was erg lekker en goed warm. Zeer aanbevelingswaardig!", rating: 5},
         { name: "Angelique Lunemann", content: "Het eten is goed, wel veel duurder. Echt heel duur.", rating: 4}
     ];
