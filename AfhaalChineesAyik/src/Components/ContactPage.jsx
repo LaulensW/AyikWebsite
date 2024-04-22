@@ -36,15 +36,15 @@ const ContactPage = () => {
         <h2>Contact Us</h2>
         <form ref={form} onSubmit={sendEmail}>
             <div class="form-group">
-                <input type="text" id="name" name="name" required style={{fontSize: '16px'}}/>
+                <input type="text" id="name" name="user_name" required style={{fontSize: '16px'}}/>
                 <label for="name">Naam</label>
             </div>
             <div class="form-group">
-                <input type="email" id="email" name="email" required style={{fontSize: '16px'}}/>
+                <input type="email" id="email" name="user_email" required style={{fontSize: '16px'}}/>
                 <label for="email">Email</label>
             </div>
             <div class="form-group">
-                <textarea id="description" name="description" rows="5" required style={{fontSize: '16px'}}></textarea>
+                <textarea id="message" name="message" rows="5" required style={{fontSize: '16px'}}></textarea>
                 <label for="description">Bericht</label>
             </div>
             <button type="submit">Verstuur bericht</button>
