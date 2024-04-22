@@ -1,3 +1,4 @@
+// App.jsx
 import React, { useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './views/home';
@@ -5,6 +6,7 @@ import Menu from './views/menu';
 import About from './views/about';
 import Contact from './views/contact';
 import Privacy from './views/privacy';
+import NotFound from './views/notfound'; // import the NotFound component
 import './App.css';
 
 const App = () => {
@@ -24,6 +26,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/privacy" element={<Privacy />} />
+        <Route path="*" element={<NotFound />} /> {/* Add this line */}
       </Routes>
     </Router>
   );
