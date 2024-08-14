@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./Popu-items.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Voorkant from "../assets/Voorkant.jpg";
+import Voorkant from "../assets/Voorkant.webp";
 
 const PopuItems = () => {
   useEffect(() => {
